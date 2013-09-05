@@ -1,10 +1,16 @@
 function fadeOutIn(a,b){
-	$(a).css({'-webkit-animation-name':'fadeOut'});
+	var c = document.getElementById(a);
+	c.className = c.className + " fadeOut";
 	setTimeout(function(){
-		$(a).addClass('not_visible');
+		c.className = c.className + " not_visible";
 	}, 501);
 	setTimeout(function(){
-		$(b).removeClass('not_visible');
-		$(b).css({'-webkit-animation-name':'fadeIn'});
+		c.className = c.className.replace(/\bfadeOut\b/,'');
+		var d = document.getElementById(b);
+		d.className = d.className.replace(/\bnot_visible\b/,'');
+		d.className = d.className + " fadeIn";
+		setTimeout(function(){
+			d.className = d.className.replace(/\bfadeIn\b/,'');
+		}, 1000);
 	}, 500);
 }
