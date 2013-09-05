@@ -17,3 +17,4 @@
 * { -webkit-animation-duration: 0.5s; }
 .fadeIn { -webkit-animation-name:fadeIn; }
 .fadeOut { -webkit-animation-name:fadeOut; }
+.not_visible { opacity:0; display:none; }
