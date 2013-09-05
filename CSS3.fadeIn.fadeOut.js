@@ -3,7 +3,7 @@ function fadeOutIn(a,b){
 	c.className = c.className + " fadeOut";
 	setTimeout(function(){
 		c.className = c.className + " not_visible";
-	}, 501);
+	}, 500);
 	setTimeout(function(){
 		c.className = c.className.replace(/\bfadeOut\b/,'');
 		var d = document.getElementById(b);
