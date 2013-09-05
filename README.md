@@ -15,3 +15,5 @@ Long story short, I wrote a simple script that works around this issue.
 usage
 =====
 `fadeOutIn('splash','main_content');`
+`fadeOut('splash');`
+`fadeIn('main_content');`
