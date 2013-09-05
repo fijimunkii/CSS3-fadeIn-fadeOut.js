@@ -14,3 +14,21 @@ function fadeOutIn(a,b){
 		}, 1000);
 	}, 500);
 }
+
+function fadeOut(a){
+	var b = document.getElementById(a);
+	b.className = b.className + " fadeOut";
+	setTimeout(function(){
+		b.className = b.className + " not_visible";
+		b.className = b.className.replace(/\bfadeOut\b/,'');
+	}, 500);
+}
+
+function fadeIn(a){
+	var b = document.getElementById(a);
+	b.className = b.className.replace(/\bnot_visible\b/,'');
+	b.className = b.className + " fadeIn";
+	setTimeout(function(){
+		b.className = b.className.replace(/\bfadeIn\b/,'');
+	}, 1000);
+}
