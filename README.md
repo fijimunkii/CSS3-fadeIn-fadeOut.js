@@ -11,3 +11,7 @@ Ever try using CSS3 animations to do the same thing and run into the issue of an
 
 
 Long story short, I wrote a simple script that works around this issue.
+
+usage
+=====
+`fadeOutIn('splash','main_content');`
