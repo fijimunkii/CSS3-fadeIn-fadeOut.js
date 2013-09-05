@@ -15,4 +15,5 @@
     }
 }
 * { -webkit-animation-duration: 0.5s; }
-.not_visible { opacity:0; display:none; }
+.fadeIn { -webkit-animation-name:fadeIn; }
+.fadeOut { -webkit-animation-name:fadeOut; }
