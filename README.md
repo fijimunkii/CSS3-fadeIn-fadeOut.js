@@ -1,6 +1,3 @@
-css3-fadeIn-fadeOut
-===================
-
 Do you enjoy using jQuery fadeIn() and fadeOut()? It sure is convenient isn't it?
 
 Too bad it doesn't run all that smoothly on low-CPU webkit devices.
