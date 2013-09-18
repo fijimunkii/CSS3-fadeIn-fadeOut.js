@@ -12,7 +12,7 @@ Long story short, I wrote a simple script that works around this issue.
 usage
 =====
 
-**NB: This script only detects element IDs.**
+**NB: This script targets element IDs.**
 
 
 ```javascript
