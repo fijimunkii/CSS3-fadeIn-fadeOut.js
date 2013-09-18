@@ -15,20 +15,20 @@ usage
 **NB: This script only detects element IDs.**
 
 
-*To fade in or fade out an element (detects visibility and applies the proper transition):*
 ```javascript
-fade('splash');
-```
+// To fade in or fade out an element (detects visibility and applies the proper transition)
 
-```javascript
+fade('splash');
+
 fade('main_content');
 ```
 
-*To fade out an element and queue the fade in:*
 ```javascript
+// To fade out an element and queue the fade in
+
 fadeOutIn('splash','main_content');
 ```
 
 compatibility
 ====
-CSS3 animations are not supported by legacy browsers. Use a detection system to fall back to other fade scripts if you plan on using this code.
+CSS3 animations are not supported by legacy browsers. Use a detection system to fall back to other fade scripts.
