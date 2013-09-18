@@ -14,6 +14,8 @@ usage
 
 *NB: This script only works on element IDs.*
 
+For the following code to run, link the javascript and css files in this repository.
+
 ```javascript
 fadeOutIn('splash','main_content');
 ```
