@@ -14,8 +14,17 @@ Long story short, I wrote a simple script that works around this issue.
 
 usage
 =====
-`fadeOutIn('splash','main_content');`
 
-`fadeOut('splash');`
+*NB: This script only works on element IDs.*
 
-`fadeIn('main_content');`
+```javascript
+fadeOutIn('splash','main_content');
+```
+
+```javascript
+fadeOut('splash');
+```
+
+```javascript
+fadeIn('main_content');
+```
