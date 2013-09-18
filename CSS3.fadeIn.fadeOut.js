@@ -15,20 +15,21 @@ function fadeOutIn(a,b){
 	}, 500);
 }
 
-function fadeOut(a){
+function fade(a){
 	var b = document.getElementById(a);
-	b.className = b.className + " fadeOut";
-	setTimeout(function(){
-		b.className = b.className + " not_visible";
-		b.className = b.className.replace(/\bfadeOut\b/,'');
-	}, 500);
-}
-
-function fadeIn(a){
-	var b = document.getElementById(a);
-	b.className = b.className.replace(/\bnot_visible\b/,'');
-	b.className = b.className + " fadeIn";
-	setTimeout(function(){
+	var test = b.classList.contains('not_visible');
+	if (test === false){
+		b.className = b.className + " fadeOut";
+		setTimeout(function(){
+			b.className = b.className + " not_visible";
+			b.className = b.className.replace(/\bfadeOut\b/,'');
+		}, 500);
+	}
+	else if (test === true){
+		b.className = b.className.replace(/\bnot_visible\b/,'');
+		b.className = b.className + " fadeIn";
+		setTimeout(function(){
 		b.className = b.className.replace(/\bfadeIn\b/,'');
-	}, 1000);
+		}, 1000);	
+	}
 }
