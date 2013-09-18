@@ -12,18 +12,23 @@ Long story short, I wrote a simple script that works around this issue.
 usage
 =====
 
-*NB: This script only works on element IDs.*
+**NB: This script only detects element IDs.**
 
-For the following code to run, link the javascript and css files in this repository.
 
+*To fade in or fade out an element (detects visibility and applies the proper transition):*
+```javascript
+fade('splash');
+```
+
+```javascript
+fade('main_content');
+```
+
+*To fade out an element and queue the fade in:*
 ```javascript
 fadeOutIn('splash','main_content');
 ```
 
-```javascript
-fadeOut('splash');
-```
-
-```javascript
-fadeIn('main_content');
-```
+compatibility
+====
+CSS3 animations are not supported by legacy browsers. Use a detection system to fall back to other fade scripts if you plan on using this code.
