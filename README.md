@@ -1,13 +1,6 @@
-Do you enjoy using jQuery fadeIn() and fadeOut()? It sure is convenient isn't it?
+Do you enjoy using jQuery fade()? It sure is convenient isn't it? Too bad it doesn't run all that smoothly on low-CPU webkit devices. To make matters worse, CSS3 animations do not play well with the ```display:none;``` property.
 
-Too bad it doesn't run all that smoothly on low-CPU webkit devices.
-
-
-
-Ever try using CSS3 animations to do the same thing and run into the issue of animations not playing well with the display property? CSS animations will not run on elements hidden with display:none;
-
-
-Long story short, I wrote a simple script that works around this issue.
+Here is a simple script that works around this issue.
 
 usage
 =====
@@ -31,4 +24,4 @@ fadeOutIn('splash','main_content');
 
 compatibility
 ====
-CSS3 animations are not supported by legacy browsers. Use a detection system to fall back to other fade scripts.
+CSS3 animations are not supported by legacy browsers. Use a detection system to fall back to another solution.
