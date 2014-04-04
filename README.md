@@ -1,4 +1,6 @@
-Do you enjoy using jQuery fade()? It sure is convenient isn't it? Too bad it doesn't run all that smoothly on low-CPU webkit devices. To make matters worse, CSS3 animations do not play well with the ```display:none;``` property.
+Do you enjoy using jQuery fade()? It sure is convenient isn't it? Too bad it doesn't run all that smoothly on low-CPU webkit devices.
+
+To make matters worse, CSS3 animations do not play well with the ```display:none;``` property.
 
 Here is a simple script that works around this issue.
 
